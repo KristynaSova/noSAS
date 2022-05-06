@@ -1,0 +1,196 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: hsl(0deg, 0%, 20%);
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/*
+ **************************************
+	MAIN-HEADER
+ **************************************
+*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+  box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.7);
+}
+.header__title {
+  font-family: "Cormorant Infant", serif;
+  font-size: 24px;
+  margin: 0 0 5px 0;
+  color: hsl(0deg, 0%, 20%);
+}
+.header__description {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  font-size: 16px;
+  
+}
+.header__item {
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  color: hsl(0deg, 0%, 20%);
+}
+.header__item:hover, .header__item:focus {
+  color: white;
+  background-color: #c16878;
+}
+
+/*
+ **************************************
+	MAIN Banner
+ **************************************
+*/
+.banner {
+  display: flex;
+ 
+  background-image: url(images/bannerHZ1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 113px;
+  height: 300px;
+  justify-content: center;
+  align-items: flex-end;
+}
+.banner__description {
+ 
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Cormorant Infant", serif;
+  
+ 
+
+}
+
+/*
+ **************************************
+	MAIN Inner section
+ **************************************
+*/
+.welcome {
+  
+}
+.welcome__flex {
+  display: flex;
+  gap: 20px;
+  padding: 90px;
+  margin: 0 auto;
+}
+.welcome__column-left {
+  max-width: 300px;
+  border-radius: 5px;
+}
+.welcome__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+.welcome__column-right {
+  flex: 1 1 50%;
+}
+.welcome__column-right p {
+  margin-top: 0;
+}
+.welcome__column-right p + p {
+  margin-top: 16px;
+}
+
+.welcome__title{
+  margin-top: 0;
+  font-family: "Merriweather", serif;;
+}
+
+.button {
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #c16878;
+  border: 0;
+}
+.button:hover {
+  background-color: #B25566;
+}
+.button__title {
+  text-decoration: none;
+  color: white;
+}
+
+.container__flex {
+  display: flex;
+  gap: 20px;
+  padding: 90px;
+  background-color: #f0f0f0;
+}
+.container__flex-column {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgba(51, 51, 51, 0.7);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s;
+  background-color: white;
+}
+.container__flex-column:hover {
+  transform: scale(1.08);
+}
+.container__flex-column a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 20%);
+}
+.container__title {
+  margin-top: 0;
+  font-family: "Merriweather", serif;
+  font-size: 25px;
+  line-height: 1.5em;
+}
+
+/*
+ **************************************
+	MAIN Footer
+ **************************************
+*/
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  background-color: #7d8f87;
+  color: white;
+  margin: 0;
+  padding: 30px 90px;
+}
+.footer__grid-column {
+  font-size: 14px;
+}
+.footer__copyright {
+  padding: 15px 30px;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0;
+}
+.footer__title {
+  font-size: 16px;
+}
+.footer__title2 {
+  color: hsl(0deg, 0%, 80%);
+  font-size: 16px;
+}
